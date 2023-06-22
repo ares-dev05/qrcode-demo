@@ -114,7 +114,8 @@ export default function Home() {
   return (
     <div className="container max-w-2xl mx-auto p-5">
       <Head>
-        <title>Quirky</title> <meta property="og:image" content={ogImage} />
+        <title>Triple Seven QR</title>{" "}
+        <meta property="og:image" content={ogImage} />
         <meta
           property="og:description"
           content="Make really cool QR codes with AI."
@@ -127,58 +128,22 @@ export default function Home() {
         />
       </Head>
 
-      <div className="text-center">
-        <h1 className="pt-6 text-center font-bold text-2xl">🔳 Quirky</h1>
-        <h5 className="pt-3 text-xs text-gray-500">
-          The{" "}
-          <a className="underline" href="https://github.com/replicate/quirky">
-            open source
-          </a>{" "}
-          tool for making really cool QR codes with AI.
-        </h5>
-      </div>
-
-      <div className="text-center mt-4">
-        <a href="https://replicate.com/docs?utm_source=project&utm_campaign=quirky">
-          <div className="inline-flex items-center bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg mx-auto text-white text-xs sm:text-sm">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-5 h-5 mr-3"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-              />
-            </svg>
-            Want to make your own AI powered apps? Check out Replicate &rarr;
-          </div>
-        </a>
-      </div>
-
       <form className="w-full mt-6" onSubmit={handleSubmit}>
         <label
           for="url"
           className="block text-sm font-medium leading-6 text-gray-900"
         >
-          URL
+          QRCode content
         </label>
         <div className="mt-2 w-64">
           <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-600 sm:max-w-md">
-            <span className="flex select-none items-center pl-3 text-gray-500 sm:text-sm">
-              https://
-            </span>
             <input
               onChange={(e) => setUrl(e.target.value)}
               type="text"
               name="url"
               id="text"
               className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-              placeholder="Enter a url"
+              placeholder="Enter a QRCode content"
               value={url}
             />
           </div>
