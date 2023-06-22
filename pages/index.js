@@ -16,7 +16,7 @@ export default function Home() {
   const [prediction, setPrediction] = useState(null);
   const [error, setError] = useState(null);
   const [qr, setQR] = useState(null);
-  const [url, setUrl] = useState("replicate.com");
+  const [url, setUrl] = useState("Hello Triple Seven!");
   const [prompt, setPrompt] = useState(promptmaker());
   const [loading, setLoading] = useState(false);
 
